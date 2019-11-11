@@ -17,7 +17,7 @@ TOWER_NAME = 'tower'
 # DEFAULT SETTINGS
 parser = argparse.ArgumentParser()
 parser.add_argument('--num_gpu', type=int, default=2, help='The number of GPUs to use [default: 2]')
-parser.add_argument('--batch', type=int, default=16, help='Batch Size per GPU during training [default: 32]')
+parser.add_argument('--batch', type=int, default=2, help='Batch Size per GPU during training [default: 32]')
 parser.add_argument('--epoch', type=int, default=201, help='Epoch to run [default: 50]')
 parser.add_argument('--point_num', type=int, default=2048, help='Point Number [256/512/1024/2048]')
 parser.add_argument('--output_dir', type=str, default='train_results', help='Directory that stores all training logs and trained models')
